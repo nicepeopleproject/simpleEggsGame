@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="anchorPane" onKeyPressed="#onKeyPressed" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nicepeopleproject.simplegameproject.HelloController">
+   <children>
+       <Button fx:id="startButton" contentDisplay="CENTER" layoutX="210.0" onAction="#onHelloButtonClick" onMouseClicked="#onHelloButtonClick" prefHeight="30.0" prefWidth="80.0" text="Start" AnchorPane.bottomAnchor="20.0" />
+      <Label fx:id="introLabel" layoutX="236.0" layoutY="241.0" />
+      <ImageView fx:id="basket" fitHeight="100.0" fitWidth="100.0" layoutX="209.0" layoutY="380.0" onDragDetected="#backetDrugDetected" onMouseDragged="#basketOnMouseDragged" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@pngwing.com.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
